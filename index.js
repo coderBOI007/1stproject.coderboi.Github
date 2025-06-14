@@ -34,6 +34,7 @@ buttons.forEach((btn) => {
                 console.log(topBar.value, "This is the value that is about to get evaluated")
                 lastOperation = topBar.value
                 let topBarWithMultiply = topBar.value.split('×').join("*")
+                topBarWithMultiply = topBar.value.split('').join("/")
                 topBar.value = eval(topBarWithMultiply);
                 lastAnswer = eval(topBarWithMultiply)
             }
